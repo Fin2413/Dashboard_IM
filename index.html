@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container-fluid text-center">
+        <div class="row">
+            <div class="col-4">
+                <div class="card" style="width: 90%; height: 60%; margin-left: 50px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Заказы по слотам</h5>
+                        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner" style="height: 100%;">
+                                <div class="carousel-item active" data-bs-interval="10000">
+                                    <div class="grid-container" style="height: 90%; margin-top: 20px;">
+                                        <!-- Левая ось с значениями -->
+                                        <div class="axis-y-left">
+                                            <span>25</span>
+                                            <span>20</span>
+                                            <span>15</span>
+                                            <span>10</span>
+                                            <span>5</span>
+                                            <span>0</span>
+                                        </div>
+
+                                        <!-- Сетка -->
+                                        <div class="grid"></div>
+
+                                        <!-- Правая ось с значениями -->
+                                        <div class="axis-y-right">
+                                            <span>500</span>
+                                            <span>400</span>
+                                            <span>300</span>
+                                            <span>200</span>
+                                            <span>100</span>
+                                            <span>0</span>
+                                        </div>
+                                        <div class="chart">
+                                            <div class="tower" style="margin-left: 100px; height: 290px; width: 75px;">
+                                                <span class="segment-text">23</span>
+                                                <div class="segment" style="height: 10%; background-color: #71C9DF;">
+                                                    <span class="segment-text">2</span>
+                                                </div>
+                                                <div class="segment" style="height: 30%; background-color: #ffd700;">
+                                                    <span class="segment-text">6</span>
+                                                </div>
+                                                <div class="segment" style="height: 60%; background-color: #0078dd;">
+                                                    <span class="segment-text">15</span>
+                                                </div>
+
+                                            </div>
+                                            <div class="tower" style="margin-right: 10px; height: 350px; width: 75px;">
+                                                <span class="segment-text">485</span>
+                                                <div class="segment" style="height: 100%; background-color: #ffd700;">
+                                                    <span class="segment-text">485</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="row row-cols-12" style="margin-top: 20px;">
+                                            <div class="col">
+                                                <div class="tower-text">10.00 - 12.00</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="2000">
+                                    <div class="grid-container" style="height: 100%; margin-top: 75px;">
+                                        <!-- Левая ось с значениями -->
+                                        <div class="axis-y-left">
+                                            <span>25</span>
+                                            <span>20</span>
+                                            <span>15</span>
+                                            <span>10</span>
+                                            <span>5</span>
+                                            <span>0</span>
+                                        </div>
+
+                                        <!-- Сетка -->
+                                        <div class="grid"></div>
+
+                                        <!-- Правая ось с значениями -->
+                                        <div class="axis-y-right">
+                                            <span>500</span>
+                                            <span>400</span>
+                                            <span>300</span>
+                                            <span>200</span>
+                                            <span>100</span>
+                                            <span>0</span>
+                                        </div>
+                                        <div class="chart">
+                                            <div class="tower" style="margin-left: 100px; height: 267px; width: 75px;">
+                                                <span class="segment-text">20</span>
+                                                <div class="segment" style="height: 70%; background-color: #71C9DF;">
+                                                    <span class="segment-text">11</span>
+                                                </div>
+                                                <div class="segment" style="height: 20%; background-color: #D8BFD8;">
+                                                    <span class="segment-text">2</span>
+                                                </div>
+                                                <div class="segment" style="height: 10%; background-color: #ffd700;">
+                                                    <span class="segment-text">1</span>
+                                                </div>
+                                                <div class="segment" style="height: 30%; background-color: #0078dd;">
+                                                    <span class="segment-text">6</span>
+                                                </div>
+                                            </div>
+                                            <div class="tower" style="margin-right: 10px; height: 293px; width: 75px;">
+                                                <span class="segment-text">460</span>
+                                                <div class="segment" style="height: 70%; background-color: #ffd700;">
+                                                    <span class="segment-text">374</span>
+                                                </div>
+                                                <div class="segment" style="height: 30%; background-color: #0078dd;">
+                                                    <span class="segment-text">86</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="row row-cols-12">
+                                            <div class="col" style="margin-top: 20px;">
+                                                <div class="tower-text">12.00 - 14.00</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="grid-container" style="margin-top: 138px; height: 150%;">
+                                        <!-- Левая ось с значениями -->
+                                        <div class="axis-y-left">
+                                            <span>25</span>
+                                            <span>20</span>
+                                            <span>15</span>
+                                            <span>10</span>
+                                            <span>5</span>
+                                            <span>0</span>
+                                        </div>
+
+                                        <!-- Сетка -->
+                                        <div class="grid"></div>
+
+                                        <!-- Правая ось с значениями -->
+                                        <div class="axis-y-right">
+                                            <span>500</span>
+                                            <span>400</span>
+                                            <span>300</span>
+                                            <span>200</span>
+                                            <span>100</span>
+                                            <span>0</span>
+                                        </div>
+                                        <div class="chart">
+                                            <div class="tower" style="margin-left: 100px;height: 150px; width: 75px;">
+                                                <span class="segment-text">8</span>
+                                                <div class="segment" style="height: 30%; background-color: #71C9DF;">
+                                                    <span class="segment-text">2</span>
+                                                </div>
+                                                <div class="segment" style="height: 70%; background-color: #D8BFD8;">
+                                                    <span class="segment-text">6</span>
+                                                </div>
+                                            </div>
+                                            <div class="tower" style="height: 230px; width: 75px;">
+                                                <span class="segment-text">314</span>
+                                                <div class="segment" style="height: 30%; background-color: #71C9DF;">
+                                                    <span class="segment-text">91</span>
+                                                </div>
+                                                <div class="segment" style="height: 70%; background-color: #D8BFD8;">
+                                                    <span class="segment-text">223</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="row row-cols-12">
+                                            <div class="col" style="margin-top: 20px;">
+                                                <div class="tower-text">14.00 - 16.00</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width: 80%; height: 60%; margin-left: 40px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Статистика</h5>
+                        <table class="table-dark" style="width: 100%;">
+                            <tbody>
+                                <tr>
+                                    <td>ФИ сборщика</td>
+                                    <td>250 SCU</td>
+                                </tr>
+                                <tr>
+                                    <td>ФИ сборщика</td>
+                                    <td>232 SCU</td>
+                                </tr>
+                                <tr>
+                                    <td>ФИ сборщика</td>
+                                    <td>183 SCU</td>
+                                </tr>
+                                <tr>
+                                    <td>ФИ сборщика</td>
+                                    <td>212 SCU</td>
+                                </tr>
+                                <tr>
+                                    <td>ФИ сборщика</td>
+                                    <td>129 SCU</td>
+                                </tr>
+                                <tr>
+                                    <td>ФИ сборщика</td>
+                                    <td>286 SCU</td>
+                                </tr>
+                                <tr>
+                                    <td>ФИ сборщика</td>
+                                    <td>176 SCU</td>
+                                </tr>
+                                <tr>
+                                    <td>ФИ сборщика</td>
+                                    <td>96 SCU</td>
+                                </tr>
+                                <tr>
+                                    <td>ФИ сборщика</td>
+                                    <td>112 SCU</td>
+                                </tr>
+                                <tr>
+                                    <td>ФИ сборщика</td>
+                                    <td>286 SCU</td>
+                                </tr>
+                                <tr>
+                                    <td>ФИ сборщика</td>
+                                    <td>176 SCU</td>
+                                </tr>
+                                <tr>
+                                    <td>ФИ сборщика</td>
+                                    <td>96 SCU</td>
+                                </tr>
+                                <tr>
+                                    <td>ФИ сборщика</td>
+                                    <td>112 SCU</td>
+                                </tr>
+                                <tr>
+                                    <td>ФИ сборщика</td>
+                                    <td>286 SCU</td>
+                                </tr>
+                                <tr>
+                                    <td>ФИ сборщика</td>
+                                    <td>176 SCU</td>
+                                </tr>
+                                <tr>
+                                    <td>ФИ сборщика</td>
+                                    <td>96 SCU</td>
+                                </tr>
+                                <tr>
+                                    <td>ФИ сборщика</td>
+                                    <td>112 SCU</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-5">
+                <div class="card" style="width: 95%; height: 100%;">
+                    <div class="card-body">
+                        <h5 class="card-title">Очередность заказов в сборку</h5>
+                        <table class="table-dark" style="width: 100%;">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Заказ №</th>
+                                    <th scope="col">Куда</th>
+                                    <th scope="col">SCU</th>
+                                    <th scope="col">Вес, кг</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">85 580</th>
+                                    <td>город</td>
+                                    <td>75</td>
+                                    <td>26,8</td>
+                                </tr>
+                                <tr style="color: red;">
+                                    <th scope="row">85 591</th>
+                                    <td>город</td>
+                                    <td>26</td>
+                                    <td>4,2</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">85 593</th>
+                                    <td>город</td>
+                                    <td>40</td>
+                                    <td>16,5</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">85 585</th>
+                                    <td>город</td>
+                                    <td>55</td>
+                                    <td>10,1</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">85 582</th>
+                                    <td>город</td>
+                                    <td>31</td>
+                                    <td>7,8</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">85 582</th>
+                                    <td>город</td>
+                                    <td>31</td>
+                                    <td>7,8</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">85 580</th>
+                                    <td>город</td>
+                                    <td>75</td>
+                                    <td>26.8</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">85 580</th>
+                                    <td>город</td>
+                                    <td>75</td>
+                                    <td>26.8</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">85 580</th>
+                                    <td>город</td>
+                                    <td>75</td>
+                                    <td>26.8</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">85 580</th>
+                                    <td>город</td>
+                                    <td>75</td>
+                                    <td>26.8</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">85 580</th>
+                                    <td>город</td>
+                                    <td>75</td>
+                                    <td>26.8</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">85 580</th>
+                                    <td>город</td>
+                                    <td>75</td>
+                                    <td>26.8</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">85 580</th>
+                                    <td>город</td>
+                                    <td>75</td>
+                                    <td>26.8</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">85 580</th>
+                                    <td>город</td>
+                                    <td>75</td>
+                                    <td>26.8</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">85 595</th>
+                                    <td>Юг</td>
+                                    <td>24</td>
+                                    <td>4,5</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">85 588</th>
+                                    <td>Юг</td>
+                                    <td>58</td>
+                                    <td>12,7</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">85 594</th>
+                                    <td>Юг</td>
+                                    <td>39</td>
+                                    <td>20,1</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">85 588</th>
+                                    <td>Юг</td>
+                                    <td>58</td>
+                                    <td>12,7</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">85 594</th>
+                                    <td>Юг</td>
+                                    <td>39</td>
+                                    <td>20,1</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">85 588</th>
+                                    <td>Юг</td>
+                                    <td>58</td>
+                                    <td>12,7</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">85 594</th>
+                                    <td>Юг</td>
+                                    <td>39</td>
+                                    <td>20,1</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">85 585</th>
+                                    <td>город</td>
+                                    <td>55</td>
+                                    <td>10,1</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">85 582</th>
+                                    <td>город</td>
+                                    <td>31</td>
+                                    <td>7,8</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">85 582</th>
+                                    <td>город</td>
+                                    <td>31</td>
+                                    <td>7,8</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">85 580</th>
+                                    <td>город</td>
+                                    <td>75</td>
+                                    <td>26.8</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">85 585</th>
+                                    <td>город</td>
+                                    <td>55</td>
+                                    <td>10,1</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <span class="flex-span" style="font-weight: 700; margin-top: 20px; margin-bottom: 10px;">
+                            <span>Опоздания:</span>
+                            <span>-</span>
+                        </span>
+                        <div>
+                            <span class="segment-subtext">Корзина в дом (К1)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4" style="margin-left: 50px;">
+                <div class="card" style="width: 90%; margin-top: -270px; padding-bottom: 10px;">
+                    <div class="gauge-wrapper">
+                        <span style="color: #fff;">Ожидаемая средняя нагрузка на сборщика, SCU</span>
+                        <br>
+                        <br>
+                        <div class="gauge four rischio3" style="margin-left: 40px; margin-top: 60px;">
+                            <div class="slice-colors">
+                                <div class="st slice-item"></div>
+                                <div class="st slice-item"></div>
+                                <div class="st slice-item"></div>
+                                <div class="st slice-item"></div>
+                            </div>
+                            <div class="needle"></div>
+                            <div class="gauge-center">
+                                <div class="label">&nbsp;</div>
+                                <div class="number">62</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card" style="width: 60%; margin-top: -270px; margin-left: -10px; padding-bottom: 30px;">
+                    <span class="segment-text" style="margin-bottom: 20px;">Текущий слот - 10:00 - 12:00</span>
+                    <span class="flex-span">
+                        <span>Собирается</span>
+                        <span>2</span>
+                    </span>
+                    <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25"
+                        aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="width: 10%; background: #71c0df;"></div>
+                    </div>
+                    <span class="flex-span">
+                        <span>Собран</span>
+                        <span>15</span>
+                    </span>
+                    <div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50"
+                        aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="width: 70%; background: #0078DD;"></div>
+                    </div>
+                    <span class="flex-span">
+                        <span>Пробит чек</span>
+                        <span>6</span>
+                    </span>
+                    <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75"
+                        aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar bg-warning" style="width: 24%; background: #FFD700;"></div>
+                    </div>
+                    <span class="flex-span">
+                        <span>Подтвержден</span>
+                        <span>1</span>
+                    </span>
+                    <div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100"
+                        aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="width: 5%; background: #D8BFD8;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
