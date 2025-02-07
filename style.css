@@ -34,6 +34,7 @@ body {
 
 .segment-text {
   font-weight: 900;
+  
 }
 
 .segment-subtext {
@@ -128,7 +129,9 @@ body {
 
 .segment-text {
     color: #fff;
+    margin-top: 20px;
 }
+
 
 td tr {
     color: #272953;
